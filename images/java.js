@@ -1,0 +1,1 @@
+document.getElementById("output-box").innerHTML = document.getElementById("output-box").innerHTML + warn;

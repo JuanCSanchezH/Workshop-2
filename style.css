@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('/images/bg-intro-desktop.png');
+    color:white;
+    margin:8%;
+}
+
+.texto-centrado{
+    & h1{
+       font-weight: 700; 
+    }
+}
+
+#formulario {
+    background-color: white;
+    border-radius: 13px;
+    padding: 30px;
+    max-width: 450px;
+    height: 460px;
+    box-shadow: 0px 6px 0px #0e0e0e35;
+    text-align: center;
+}
+
+#titulodeformulario {
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 7px;
+    max-width: 450px;
+    box-shadow: 0px 8px 0px #0e0e0e23;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input::placeholder{
+    font-weight: 600;
+}
+
+.buttonsend {
+    color:white;
+    background-color: hsl(154, 59%, 51%);
+    border:none;
+    border-radius: 7px;
+    width: 85%;
+    padding:2%;
+    box-shadow: 0px 3px 0px hsl(154, 56%, 42%);
+    &:hover{
+        background-color: hsl(154, 50%, 62%);
+    }
+}
+
+input {
+    height: 50px;
+}
+
+.input{
+    & p {
+        font-size: x-small;
+        font-style: italic;
+        text-align: end;
+    }
+}
+
+.piedeformulario {
+    color:rgb(176, 175, 175);
+    font-size: xx-small;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#negrilla {
+    color:hsl(0, 75%, 67%);
+    font-weight: bold;
+    font-size: x-small;
+}
+
+section{
+    display: flex;
+    align-items: center;
+}
+
+.your-class::-webkit-input-placeholder {
+    color: hsl(0, 75%, 67%);
+}
+
+@media only screen and (max-width: 767px) {
+    .texto-centrado{
+        text-align: center;
+    }
+    #titulodeformulario{
+        margin: auto;
+    }
+    form{
+        margin: auto;
+    }
+}
